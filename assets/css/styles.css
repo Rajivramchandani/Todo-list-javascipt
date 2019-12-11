@@ -1,0 +1,100 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+background-color: #333;
+}
+
+.acard {
+    float: left;
+    position: relative;
+}
+/* 
+.acard:not(:first-of-type) {
+    margin-left: 2%;
+} */
+
+.acard .face {
+    width: 92%;
+    height: 230px;
+    margin-left: 4%;
+}
+
+.acard .face1 {
+    color: #fff;
+    transition: all .5s ease-in-out;
+    background-color: #333;
+    z-index: 2;
+    text-align: center;
+    position: relative;
+    transform: translateY(115px);
+}
+
+.acard:hover .face1 {
+    transform: translateY(0); 
+    background-color: rgb(2, 2, 138); 
+    top: 0;
+} 
+
+.acard:hover .face1 h3 ,
+.acard:hover .face1 i {
+  opacity: 1;
+}
+
+.acard .face1 i {
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: .3;
+    transition: all .5s ease-in-out;
+}
+
+.acard .face1 h3 {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    opacity: .3;
+    transition: all .5s ease-in-out;
+}
+
+.acard .face2 {
+    color: #333;
+    background: #fff;
+    padding: 20px;
+    font-size: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    z-index: 1;
+    transition: all .5s ease-in-out;
+    position: relative;
+    transform: translateY(-115px); 
+}
+
+.acard:hover .face2 {
+    transform: translateY(0); 
+} 
+
+.acard .face2 a {
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: all .5 s ease-in-out;
+}
+
+.acard .face2 a:hover {
+    color: #fff;
+    background-color: #333;
+}
